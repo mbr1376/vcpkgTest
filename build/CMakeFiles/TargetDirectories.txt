@@ -1,0 +1,3 @@
+/home/mohamad/Documents/vcpkgTest/build/CMakeFiles/vcpkgTest.dir
+/home/mohamad/Documents/vcpkgTest/build/CMakeFiles/edit_cache.dir
+/home/mohamad/Documents/vcpkgTest/build/CMakeFiles/rebuild_cache.dir

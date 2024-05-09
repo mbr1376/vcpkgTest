@@ -1,0 +1,62 @@
+A suitable version of cmake was not found (required v3.29.2) Downloading portable cmake 3.29.2...
+Downloading cmake...
+https://github.com/Kitware/CMake/releases/download/v3.29.2/cmake-3.29.2-linux-x86_64.tar.gz->/opt/vcpkg/downloads/cmake-3.29.2-linux-x86_64.tar.gz
+Extracting cmake...
+Detecting compiler hash for triplet x64-linux...
+Compiler found: /usr/bin/c++
+The following packages will be built and installed:
+    fmt:x64-linux@10.2.1#2
+  * vcpkg-cmake:x64-linux@2023-05-04
+  * vcpkg-cmake-config:x64-linux@2022-02-06#1
+Additional packages (*) will be modified to complete this operation.
+Restored 0 package(s) from /home/mohamad/.cache/vcpkg/archives in 19.9 us. Use --debug to see more details.
+Installing 1/3 vcpkg-cmake-config:x64-linux@2022-02-06#1...
+Building vcpkg-cmake-config:x64-linux@2022-02-06#1...
+-- Installing: /opt/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/vcpkg_cmake_config_fixup.cmake
+-- Installing: /opt/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/vcpkg-port-config.cmake
+-- Installing: /opt/vcpkg/packages/vcpkg-cmake-config_x64-linux/share/vcpkg-cmake-config/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 32 ms.
+Elapsed time to handle vcpkg-cmake-config:x64-linux: 57.4 ms
+vcpkg-cmake-config:x64-linux package ABI: 273d941b52ecb7cdb56f63eb82f352ec0fe50269f1952f1adaf8c3bb4c14b769
+Installing 2/3 vcpkg-cmake:x64-linux@2023-05-04...
+Building vcpkg-cmake:x64-linux@2023-05-04...
+-- Installing: /opt/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_configure.cmake
+-- Installing: /opt/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_build.cmake
+-- Installing: /opt/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg_cmake_install.cmake
+-- Installing: /opt/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/vcpkg-port-config.cmake
+-- Installing: /opt/vcpkg/packages/vcpkg-cmake_x64-linux/share/vcpkg-cmake/copyright
+-- Performing post-build validation
+Stored binaries in 1 destinations in 9.72 ms.
+Elapsed time to handle vcpkg-cmake:x64-linux: 40.2 ms
+vcpkg-cmake:x64-linux package ABI: c002c46bc5aa5445f3e958fc7ea1e500878d7c3803f15124d61d78e1df3d2a0b
+Installing 3/3 fmt:x64-linux@10.2.1#2...
+Building fmt:x64-linux@10.2.1#2...
+-- Downloading https://github.com/fmtlib/fmt/archive/10.2.1.tar.gz -> fmtlib-fmt-10.2.1.tar.gz...
+-- Extracting source /opt/vcpkg/downloads/fmtlib-fmt-10.2.1.tar.gz
+-- Applying patch fix-visibility.patch
+-- Applying patch fix-write-batch.patch
+-- Using source at /opt/vcpkg/buildtrees/fmt/src/10.2.1-a991065f88.clean
+-- Found external ninja('1.11.1').
+-- Configuring x64-linux
+-- Building x64-linux-dbg
+-- Building x64-linux-rel
+-- Fixing pkgconfig file: /opt/vcpkg/packages/fmt_x64-linux/lib/pkgconfig/fmt.pc
+-- Fixing pkgconfig file: /opt/vcpkg/packages/fmt_x64-linux/debug/lib/pkgconfig/fmt.pc
+-- Installing: /opt/vcpkg/packages/fmt_x64-linux/share/fmt/usage
+-- Installing: /opt/vcpkg/packages/fmt_x64-linux/share/fmt/copyright
+-- Downloading https://github.com/NixOS/patchelf/releases/download/0.14.5/patchelf-0.14.5-x86_64.tar.gz -> patchelf-0.14.5-x86_64.tar.gz...
+-- Performing post-build validation
+Stored binaries in 1 destinations in 120 ms.
+Elapsed time to handle fmt:x64-linux: 1.2 min
+fmt:x64-linux package ABI: c548c543eb8a30f723461d2fd7b30f412cc107d12041434f83d51ade89035ddb
+Total install time: 1.2 min
+The package fmt provides CMake targets:
+
+    find_package(fmt CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE fmt::fmt)
+
+    # Or use the header-only version
+    find_package(fmt CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE fmt::fmt-header-only)
+
