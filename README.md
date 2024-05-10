@@ -1,5 +1,6 @@
 # vcpkgTest
 ## use vcpkg Manager for  c++ code in  cmake
+vcpkg is a free C/C++ package manager for acquiring and managing libraries. Choose from over 1500 open source libraries to download and build in a single step or add your own private libraries to simplify your build process. Maintained by the Microsoft C++ team and open source contributors. 
 
 1- create new aplication  in  directory project , create 2  file  json vcpkg.json  and   vcpkg-configuration.json
 ```bash
